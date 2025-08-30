@@ -1,0 +1,110 @@
+/* ========= Variáveis (ajuste as cores quando quiser) ========= */
+:root{
+  --bg:#0e0b0f;
+  --panel:#111218;
+  --text:#f5f5f5;
+  --muted:#a8a8a8;
+  --primary:#87cefa;       /* claro */
+  --primary-dark:#2a2a4b;  /* escuro */
+  --accent:#00bcd4;
+  --border:#1f2230;
+  --radius:14px;
+  --container:1100px;
+}
+
+/* ========= Reset básico ========= */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.6;
+  color:var(--text);
+  background:
+    radial-gradient(1000px 400px at 10% -20%, rgba(135,206,250,0.12), transparent 60%),
+    radial-gradient(800px 300px at 90% -10%, rgba(42,42,75,0.25), transparent 60%),
+    var(--bg);
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ========= Layout utilitários ========= */
+.container{max-width:var(--container); margin:0 auto; padding:0 20px}
+.narrow{max-width:800px}
+.section{padding:96px 0; scroll-margin-top:96px}
+.section.alt{background-color:#0f111a}
+h1,h2{font-family:Poppins, Inter, sans-serif; line-height:1.2; margin:0 0 16px}
+h1{font-size:clamp(28px, 4vw, 44px); font-weight:700}
+h2{font-size:clamp(22px, 3vw, 32px); font-weight:700}
+.kicker{text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:600; margin-bottom:8px}
+
+/* ========= Header fixo ========= */
+.site-header{
+  position:sticky; top:0; z-index:1000;
+  backdrop-filter:saturate(140%) blur(8px);
+  background:linear-gradient(90deg, rgba(42,42,75,.85), rgba(135,206,250,.15));
+  border-bottom:1px solid var(--border);
+}
+.header-inner{display:flex; align-items:center; gap:20px; height:72px}
+.logo{font-weight:700; font-family:Poppins, Inter, sans-serif; font-size:22px}
+.logo span{color:var(--primary)}
+
+.menu{margin-left:auto; display:flex; gap:20px; align-items:center}
+.menu a{opacity:.9; transition:.2s}
+.menu a:hover{opacity:1; color:var(--primary)}
+.btn{border:1px solid var(--border); padding:10px 14px; border-radius:999px; background:#141624; display:inline-block}
+.btn:hover{border-color:var(--accent)}
+.btn-primary{background:linear-gradient(135deg, var(--primary-dark), var(--primary)); color:#0a0a0a; font-weight:700}
+.btn-primary:hover{filter:brightness(1.05)}
+
+.nav-toggle{display:none; background:none; border:none; font-size:22px; color:var(--text)}
+
+/* ========= Hero ========= */
+.grid-2{display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center}
+.hero-cta{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+.hero-media img{border-radius:var(--radius); border:1px solid var(--border); box-shadow:0 10px 40px rgba(0,0,0,.35)}
+
+/* ========= Skills ========= */
+.skills{display:flex; flex-wrap:wrap; gap:10px; padding:0; list-style:none}
+.skills li{background:#141624; border:1px solid var(--border); padding:8px 12px; border-radius:999px}
+
+/* ========= Filtros ========= */
+.filters{display:flex; gap: 8px; margin:12px 0 22px;}
+.chip{background:#0b0c0c; border:1px solid var(--border); padding:8px 12px; border-radius:999px; cursor:pointer}
+.chip.is-active, .chip:hover{border-color:var(--accent); background:linear-gradient(135deg, var(--primary-dark), var(--primary)); color:#0a0a0a; font-weight:600}
+
+/* ========= Cards de projetos ========= */
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+.card{
+  background:#030408; border:1px solid var(--border); border-radius:var(--radius);
+  overflow:hidden; display:flex; flex-direction:column; box-shadow:0 8px 24px rgba(0, 0, 0, 0.25)
+}
+.card img{aspect-ratio:16/9; object-fit:cover}
+.card-body{padding:16px}
+.card-tags{display:flex; gap:8px; margin:6px 0 10px}
+.tag{font-size:12px; padding:4px 8px; border:1px solid var(--border); border-radius:999px; color:var(--muted)}
+.card-actions{display:flex; gap:10px; padding:14px 16px 18px}
+
+/* ========= Certificados ========= */
+.certs{list-style:none; padding:0; margin:0; display:grid; gap:8px}
+.certs a{padding:12px 14px; display:block; border:1px solid var(--border); border-radius:10px; background:#141624}
+.certs a:hover{border-color:var(--accent)}
+
+/* ========= Contato ========= */
+.contact{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
+
+/* ========= Footer ========= */
+.site-footer{border-top:1px solid var(--border); background:#0d0f15}
+.site-footer p{margin:0; padding:28px 0; text-align:center; color:var(--muted)}
+
+/* ========= Responsividade ========= */
+@media (max-width: 900px){
+  .grid-2{grid-template-columns:1fr}
+  .cards{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 640px){
+  .cards{grid-template-columns:1fr}
+  .menu{display:none; position:absolute; right:20px; top:72px; flex-direction:column; background:#0f111a; padding:16px; border:1px solid var(--border); border-radius:12px}
+  .menu.open{display:flex}
+  .nav-toggle{display:block; margin-left:auto}
+}

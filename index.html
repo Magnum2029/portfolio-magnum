@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magnum — Portfólio</title>
+  <meta name="description" content="Portfólio profissional de Magno, Desenvolvedor Front-End. Projetos em React, TypeScript, Next.js e SASS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">Magnum<span>.dev</span></a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
+
+      <nav id="menu" class="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#certificados">Certificados</a>
+        <a href="#contato" class="btn btn-primary">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container grid-2">
+        <div>
+          <p class="kicker">Front-End Developer</p>
+          <h1>Interfaces claras, rápidas e responsivas.</h1>
+          <p>HTML • CSS/Sass • JavaScript/TypeScript • React • Next.js • Boas práticas, acessibilidade e performance.</p>
+
+          <div class="hero-cta">
+            <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+            <a href="https://github.com/Magnum2029" target="_blank" rel="noopener" class="btn">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="Ambiente de programação em um laptop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container narrow">
+        <h2>Sobre mim</h2>
+        <p>Sou o Magnum, desenvolvedor Front-End. Transformo ideias em produtos digitais com atenção a UX, SEO e código limpo. Gosto de trabalhar com React/Next.js e integração com APIs.</p>
+        <div class="meta">
+          <a class="btn" href="assets/CV-Magnum.pdf" download>Baixar CV</a>
+          <a class="btn" href="mailto:magnumsantos97@gmail.com">Enviar e-mail</a>
+          <a class="btn" href="https://www.linkedin.com/in/magnum-de-oliveira-santos-b138041a1/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>HTML5</li><li>CSS3 / Sass (BEM)</li><li>JavaScript</li><li>TypeScript</li>
+          <li>React</li><li>Next.js</li><li>Styled Components</li><li>Tailwind</li>
+          <li>Git & GitHub</li><li>Figma</li><li>REST APIs</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2>Projetos em destaque</h2>
+
+        <div class="filters">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="react">React</button>
+          <button class="chip" data-filter="js">JavaScript</button>
+          <button class="chip" data-filter="html">HTML/CSS</button>
+        </div>
+
+        <div class="cards" id="cards"><!-- preenchido via JS --></div>
+      </div>
+    </section>
+
+    <!-- CERTIFICADOS -->
+    <section id="certificados" class="section alt">
+      <div class="container">
+        <h2>Certificados</h2>
+        <ul class="certs">
+          <li><a href="#" target="_blank" rel="noopener">EBAC — Front-End Completo</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Sass & BEM</a></li>
+          <li><a href="#" target="_blank" rel="noopener">React + TypeScript</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Estudonauta</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container narrow">
+        <h2>Contato</h2>
+        <p>Tem um projeto? Vamos conversar.</p>
+        <div class="contact">
+          <a class="btn btn-primary" href="mailto:magnumsantos97@gmail.com">magnumsantos97@gmail.com</a>
+          <a class="btn" href="https://wa.me/351914045512" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Magnum • Feito com ♥</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
