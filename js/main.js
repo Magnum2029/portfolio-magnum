@@ -31,26 +31,26 @@ const projects = [
     img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop",
     tags: ["HTML/CSS"],
     category: "html",
-    demo: "https://magnum2029.github.io/agencia-criativa-web/",
+    demo: "https://magnum2029.github.io/Agencia-Criativa-Web/",
     code: "https://github.com/Magnum2029/agencia-criativa-web"
   },
   {
-    title: "Catálogo de Produtos (React)",
+    title: "Catálogo de Livros (vite)",
     desc: "Componentização, formulários controlados e useEffect.",
     img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
     tags: ["React", "Hooks"],
     category: "react",
-    demo: "#",
-    code: "https://github.com/Magnum2029"
+    demo: "https://book-catalog-pink.vercel.app/",
+    code: "https://github.com/Magnum2029/book-catalog.git"
   },
   {
-    title: "Todo List TypeScript",
+    title: "Estilo-Livre-Barbearia",
     desc: "Estado tipado, filtros e persistência no localStorage.",
     img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop",
     tags: ["TypeScript", "JS"],
     category: "js",
-    demo: "#",
-    code: "https://github.com/Magnum2029"
+    demo: "https://magnum2029.github.io/Estilo-Livre-Barbearia/",
+    code: "https://github.com/Magnum2029/Estilo-Livre-Barbearia.git"
   },
   {
     title: "next15-todos",
@@ -58,8 +58,8 @@ const projects = [
     img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop",
     tags: ["HTML/CSS"],
     category: "html",
-    demo: "https://github.com/Magnum2029/next15-todos.git",
-    code: "https://next15-todos.vercel.app"
+    demo: "https://next15-todos.vercel.app",
+    code: "https://github.com/Magnum2029/next15-todos.git"
   },
 ];
 
