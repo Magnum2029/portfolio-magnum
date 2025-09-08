@@ -53,13 +53,13 @@ const projects = [
     code: "https://github.com/Magnum2029"
   },
   {
-    title: "Portal Viagens",
+    title: "next15-todos",
     desc: "Landing page com grid responsivo e Scroll suave.",
     img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop",
     tags: ["HTML/CSS"],
     category: "html",
-    demo: "#",
-    code: "https://github.com/Magnum2029"
+    demo: "https://github.com/Magnum2029/next15-todos.git",
+    code: "https://next15-todos.vercel.app"
   },
 ];
 
