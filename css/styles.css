@@ -90,6 +90,44 @@ h2{font-size:clamp(22px, 3vw, 32px); font-weight:700}
 .certs a{padding:12px 14px; display:block; border:1px solid var(--border); border-radius:10px; background:#141624}
 .certs a:hover{border-color:var(--accent)}
 
+/* Itens expansíveis (Estudonauta) */
+.certs details{
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:#141624;
+  padding:10px 12px;
+}
+.certs details + details{margin-top:8px}
+.certs summary{
+  cursor:pointer;
+  list-style:none;
+  font-weight:600;
+}
+.certs summary::-webkit-details-marker{display:none}
+
+/* Botões menores e alinhados dentro do Estudonauta */
+.cert-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:12px;
+}
+.cert-buttons .btn{
+  padding:6px 12px;           /* menor que o padrão */
+  font-size:14px;             /* texto menor */
+  border-radius:8px;
+  background:linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color:#0a0a0a;
+  border:1px solid var(--border);
+  font-weight:600;
+  box-shadow:0 3px 8px rgba(0,0,0,.25);
+  transition:transform .2s ease, filter .2s ease;
+}
+.cert-buttons .btn:hover{
+  filter:brightness(1.05);
+  transform:scale(1.05);
+}
+
 /* ========= Contato ========= */
 .contact{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px}
 
